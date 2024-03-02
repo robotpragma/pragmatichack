@@ -50,10 +50,12 @@
 </div>
 
 <script>
-    // Fungsi untuk menampilkan pop-up saat halaman dimuat
+    // Fungsi untuk menampilkan pop-up setelah 2 detik saat halaman dimuat
     window.onload = function() {
-        document.getElementById("overlay").style.display = "block";
-        document.getElementById("popup").style.display = "block";
+        setTimeout(function() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("popup").style.display = "block";
+        }, 2000); // Waktu dalam milidetik (2 detik)
     };
 
     // Fungsi untuk menutup pop-up setelah mengklik tombol "Daftar"
@@ -1475,7 +1477,7 @@
         }
         .imag{
             width:232px;
-            height: 100px;
+            height: 73px;
             float:left;
             margin:auto;
         }
